@@ -33,6 +33,7 @@ function calcRoute(){
 }
 */
 
+
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 	var start="Sydney NSW,Australia";
 	var end="Newcastle NSW,Australia";
@@ -51,3 +52,5 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 		}
 	);
 }	
+
+$("#button").bind("click", calculateAndDisplayRoute)
