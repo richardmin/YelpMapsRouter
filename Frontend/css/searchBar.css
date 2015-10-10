@@ -1,0 +1,11 @@
+#searchBar {
+	height: 100%;
+	width: 20%;
+	left: 0%;
+	top:0;
+	background-position: absolute;
+}
+
+.addressSearch {
+	text-decoration: none
+}
