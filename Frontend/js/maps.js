@@ -1,4 +1,3 @@
-
 var map;
 var directionsService;
 var directionsDisplay;
@@ -14,8 +13,8 @@ function initMap() {
 }
 
 function calculateAndDisplayRoute() {
-	var start="Sydney NSW,Australia";
-	var end="Newcastle NSW,Australia";
+	var start="Zion National Park, Utah";
+	var end="University of California, Los Angeles, Los Angeles";
 	
 	directionsService.route({
 			origin: start,
@@ -31,4 +30,4 @@ function calculateAndDisplayRoute() {
 	);
 }	
 
-$("#button").bind("click", calculateAndDisplayRoute)
+$("#button").bind("click", calculateAndDisplayRoute);
