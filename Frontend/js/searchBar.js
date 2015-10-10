@@ -1,9 +1,9 @@
 
-$(function() {
-    $( "#accordion-bottom" ).accordion({
-      heightStyle: "fill"
-    });
-  });
+//$(function() {
+    //$( "#accordion-bottom" ).accordion({
+      //heightStyle: "fill"
+    // });
+  // });
 //
 var API_HOST = 'api.yelp.com'
 var DEFAULT_TERM = 'dinner'
@@ -43,3 +43,7 @@ function search(term, location){
     };
     return request(API_HOST, SEARCH_PATH, url_params=url_params);
 }*/
+
+
+$("#button").bind("click", yelpInit)
+$("#button2").bind("click", search)
