@@ -13,31 +13,9 @@ function initMap() {
 	directionsDisplay.setMap(map);
 }
 
-/*
-function calcRoute(){
-	start="Sydney NSW,Australia";
-	end="Newcastle NSW,Australia";
-	
-	var request = {
-		origin: start,
-		destination: end,
-		travelMode: google.maps.TravelMode.DRIVING
-	};
-	directionsService.route(request, function(result, status) {
-		if (status === google.maps.DirectionsStatus.OK){
-			directionsDisplay.setDirections(result);
-		} else {
-			window.alert('Directions request fails due to ' + status);
-		}
-	});
-}
-*/
-
-
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+function calculateAndDisplayRoute() {
 	var start="Sydney NSW,Australia";
 	var end="Newcastle NSW,Australia";
-	console.log("Hellow");
 	
 	directionsService.route({
 			origin: start,
