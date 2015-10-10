@@ -8,19 +8,18 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>YelpRoutes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="css/maps.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,6 +30,9 @@
 
   <body>
 
+    <div id="map"></div>
+    <!--<div id="map">error with loading.</div>-->
+    <!--
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -48,7 +50,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -59,15 +61,18 @@
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
 
-    </div><!-- /.container -->
+    </div>
 
 
+    -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCw1jUxiVwJGbzRDDBPo9mI75L_wwfb1M&callback=initMap"
+        async defer></script>
+    <script src="js/maps.js"></script>
+  -->
   </body>
 </html>
