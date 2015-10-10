@@ -4,11 +4,8 @@
 	left: 0%;
 	top: 0;
 	background-position: absolute;
-}
-
-#bottomAlign {
-	position: fixed;
-	bottom: 0;
+	padding-bottom: 0px;
+	background-color: red;
 }
 
 .noDecoration {
@@ -23,10 +20,31 @@
 
 }
 
+.results {
+
+}
+
 .addressSearchWrapper {
 	padding: 10px 15px;
 }
 
 .yelpSearchWrapper {
-	padding-left: 15px;
+	padding: 10px 15px;
+}
+
+.resultsWrapper {
+	padding: 10px 15px;
+}
+
+#searchBarFooter {
+	bottom: 0px;
+	width: 100%;
+	background-color: #FFF0F0;
+}
+
+#accordion-bottom {
+	bottom: 0px;
+	position: relative;
+	width: 100%;
+	heightStyle: ;
 }

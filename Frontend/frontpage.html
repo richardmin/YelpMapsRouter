@@ -32,7 +32,7 @@
             </a>
           </div>
           <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">Panel Body</div>
+            <div class="panel-body" id="GoogleBody">Google Body</div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -44,28 +44,30 @@
             </a>
           </div>
           <div id="collapse2" class="panel-collapse collapse in">
-            <div class="panel-body">Panel Body</div>
+            <div class="panel-body" id="YelpBody">Yelp Body</div>
           </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a data-toggle="collapse" href="#collapse3" data-parent="accordion" class="noDecoration">
-              <h4 class="panel-title">
-                Results
-              </h4>
-            </a>
-          </div>
-          <div id="collapse3" class="panel-collapse collapse">
-            <div class="panel-body">Panel Body</div>
-          </div>
-        </div>
+        
       </div>
 
 
       <button type="button" id="button">run code</button>
-
-    </div>
-    
+      <div id="searchBarFooter">
+        <div class="panel-group" id="accordion-bottom">
+          <div class="panel panel-default">
+            <div class="resultsWrapper">
+              <a data-toggle="collapse" href="#collapse3" data-parent="accordion-bottom" class="noDecoration">
+                <h4 class="results">
+                  Results
+                </h4>
+              </a>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body" id="ResultsBody">Results Body</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
