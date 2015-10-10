@@ -2,11 +2,31 @@
 	height: 100%;
 	width: 20%;
 	left: 0%;
-	top:0;
+	top: 0;
 	background-position: absolute;
 }
 
-.classSearch {
-	text-decoration: none
+#bottomAlign {
+	position: fixed;
+	bottom: 0;
 }
 
+.noDecoration {
+	text-decoration: none !important
+}
+
+.addressSearch {
+
+}
+
+.yelpSearch {
+
+}
+
+.addressSearchWrapper {
+	padding: 10px 15px;
+}
+
+.yelpSearchWrapper {
+	padding-left: 15px;
+}
