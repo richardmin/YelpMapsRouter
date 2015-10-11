@@ -48,9 +48,8 @@ function search(){
 	$.ajax({
 		url: request_data.url,
 		type: request_data.method,
-		data: request_data.data,
+    	data: oauth.authorize(request_data, token),
 		dataType: 'jsonp',
-		headers: oauth.toHeader(oauth.authorize(request_data, token))
 	}).done(function(data) {
 		console.log("wheeee");	
 		//process your data here
