@@ -24,35 +24,55 @@
     <div id="searchBar">
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
-          <div class="addressSearchWrapper">
+          <div class="panel-body">
             <a data-toggle="collapse" href="#collapse1" data-parent="accordion" class="noDecoration">
               <h4 class="addressSearch" style>
-                Address Search
+                <form id="form1">
+					  Starting point:<br>
+					  <input type="text" name="start">
+				</form>
               </h4>
             </a>
           </div>
-          <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body" id="GoogleBody">Google Body</div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body" id="GoogleBody">
+				<form id="form2">
+					  Destination:<br>
+					  <input type="text" name="end">
+				</form>
+				<br><br>
+				<button type="button" id="button" form="form2">Get Directions</button>
+			</div>
           </div>
         </div>
         <div class="panel panel-default">
           <div class="yelpSearchWrapper">
             <a data-toggle="collapse" href="#collapse2" data-parent="accordion" class="noDecoration">
               <h4 class="yelpSearch">
-                Yelp Search
+                <form id="form3">
+					  Find:<br>
+					  <input type="text" name="term">
+					  <br>
+					  Near:<br>
+					  <input type="text" name="location">
+					  <br>
+					  Within distance:<br>
+					  <input type="text" name="radius">
+					  <br><br>
+				</form>
+				<button type="button2" id="button2" form="form3">Get Restaurants</button>
               </h4>
             </a>
           </div>
           <div id="collapse2" class="panel-collapse collapse in">
-            <div class="panel-body" id="YelpBody">Yelp Body</div>
+            <div class="panel-body" id="YelpBody">
+			</div>
           </div>
         </div>
         
       </div>
 
 
-      <button type="button" id="button">run init</button>
-      <button type="button2" id="button2">run search</button>
       <div id="searchBarFooter">
         <div class="panel-group" id="accordion-bottom">
           <div class="panel panel-default">

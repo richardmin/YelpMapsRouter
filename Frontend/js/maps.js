@@ -17,8 +17,8 @@ function initMap() {
 }
 
 function calculateAndDisplayRoute() {
-	var start="Zion National Park, Utah";
-	var end="University of California, Los Angeles, Los Angeles";
+	var start = document.getElementsByName("start")[0].value;
+	var end = document.getElementsByName("end")[0].value;
 	
 	directionsService.route({
 			origin: start,
@@ -47,6 +47,9 @@ function getCoordinates(result) {
 		lngArray[x] = currentRoute[x].lng(); //Returns the longitude
 		path.push(pos);
 	}
+	obj_newPolyline.setMap(null);
+	
+	getJson();
 }
 
 function getJson(){
