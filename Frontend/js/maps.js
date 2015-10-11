@@ -29,5 +29,3 @@ function calculateAndDisplayRoute() {
 		}
 	);
 }	
-
-$("#button").bind("click", calculateAndDisplayRoute);
